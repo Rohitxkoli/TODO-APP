@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: royalblue;
+}
+.box {
+    width: 50%;
+    min-height: 80%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+
+    
+}
+
+.heading {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    color: royalblue;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.349);
+    box-shadow: 6px 5px 7px  rgba(0, 0, 0, 0.458);
+    border-radius: 5px;
+     
+
+}
+
+
+.app {
+    width: 80%;
+    height: 90%;
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: 5px 5px 6px 5px rgba(0, 0, 0, 0.387);
+    overflow-y: scroll;
+    padding-bottom: 20px;
+}
+
+.input{
+    width: 100%;
+    height: 25%;
+    /* background: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.input input{
+    width: 70%;
+    height: 50%;
+    padding-left: 19px;
+    border-radius: 8px;
+    border: 3px solid royalblue;
+    letter-spacing: 2px;
+}
+.input button {
+    width: 20%;
+    height: 50%;
+    border-radius: 5px;
+    background-color: royalblue;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.input button:hover {
+    width: 20%;
+    height: 50%;
+    border-radius: 5px;
+    background-color: rgb(33, 64, 157);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    overflow-y: auto;
+    /* background-color: red; */
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 5px;
+    overflow-y: auto;
+}
+
+
+
+.task{
+    width: 90%;
+    height: 60px;
+    border: 3px solid rgba(0, 0, 0, 0.488);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    background-color:  rgba(26, 98, 98, 0.176);
+    padding-left: 10px;
+    padding-right: 10px;
+     
+}
+
+.deletebtn {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    font-family: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.task button:hover {
+    background-color: rgb(167, 8, 8);
+    color: white;
+    font-family: 1rem;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+/* 
+    Media querys
+*/
+
+@media only screen and (max-width : 400px) {
+    .container{
+        /* background-color: red; */
+    }
+
+    .box {
+        width: 90%;
+        min-height: 80%;
+         
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2rem;   
+    }
+    .task{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    .container{
+        /* background-color: blue; */
+    }
+    
+
+    .heading {
+        width: 100%;
+        height: 60px;
+        font-size: 0.5rem
+    }
+
+
+    .box {
+        width: 95%;
+        min-height: 80%;
+         
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2rem;   
+    }
+
+    .app {
+        width: 90%;
+        height: 90%;
+        padding: 10px;
+    }
+
+
+    .input input{
+        width: 70%;
+        height: 30%;
+        padding-left: 19px;
+        border-radius: 8px;
+        border: 3px solid royalblue;
+        letter-spacing: 2px;
+        /* font-size: 5px; */
+    }
+    .task{
+        font-size: 15px;
+    }
+
+    .input button {
+        width: 20%;
+        height: 30%;
+    }
+    .input button:hover {
+        width: 20%;
+        height: 30%;
+        background-color: rgb(34, 75, 201);
+    }
+
+
+}
